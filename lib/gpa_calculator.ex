@@ -15,7 +15,6 @@ defmodule GpaCalculator do
   end
 
   def calculate_gpa(grades) do
-
     sum =
       grades
       |> Enum.reduce(0, fn g, acc ->
@@ -27,7 +26,7 @@ defmodule GpaCalculator do
   end
 
   def grade_to_points(grade) do
-   %{
+    %{
       "A-" => 1,
       "A" => 2,
       "A+" => 3,
